@@ -4,10 +4,13 @@ import NavBar from './components/NavBar';
 import './index.css';
 
 function App() {
+
   return (
     <div>
       <header><NavBar /></header>
-      <main><Outlet /></main>
+      <main>
+        <Outlet />
+      </main>
     </div>
   );
 }

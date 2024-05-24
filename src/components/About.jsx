@@ -1,13 +1,13 @@
 import React from "react";
 import profileImage from '../files/profileimage.jpg';
 
-function About() {
+export default function About() {
     return (
         <div className="text-center">
         <br/>
-        {/* <div className="w-48 h-48 rounded-full overflow-hidden mx-auto">
-            <img src={profileImage} alt="Sandro Ledesma" className="w-full h-full object-cover object-top" />
-        </div>  */}
+        <div className="w-64 h-64 rounded-full overflow-hidden mx-auto">
+            <img src={profileImage} alt="Sandro Ledesma" className="w-64 h-64 object-cover object-top" />
+        </div> 
         <br />
         <h1 className="text-2xl font-bold mb-4">Sandro Ledesma</h1>
         <br />
@@ -24,5 +24,3 @@ function About() {
     </div>
     )
 }
-
-export default About;

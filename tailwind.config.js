@@ -4,12 +4,11 @@ module.exports = {
     "./index.html",
     "./index.jsx", 
     "./App.jsx",
-    "./src/components/About",
-    "./src/components/Blog",
-    "./src/components/Error",
-    "./src/components/Experience",
-    "./src/components/NavBar",
-    "./src/components/Projects"
+    "./src/components/About.jsx",
+    "./src/components/Error.jsx",
+    "./src/components/Experience.jsx",
+    "./src/components/NavBar.jsx",
+    "./src/components/Projects.jsx"
   ],
   theme: {
     extend: {},

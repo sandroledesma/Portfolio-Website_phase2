@@ -6,12 +6,12 @@ import ReactDOM from 'react-dom/client';
 import { createBrowserRouter, RouterProvider} from 'react-router-dom';
 
 //Tailwind CSS
-import './index.css'
+import './index.css';
+
 
 //Components
 import App from './App.jsx';
 import About from './components/About.jsx';
-import Blog from './components/Blog.jsx';
 import Error from './components/Error.jsx';
 import Experience from './components/Experience.jsx';
 import NavBar from './components/NavBar.jsx';
@@ -30,10 +30,6 @@ const router = createBrowserRouter([
       {
         path: "experience",
         element: <Experience />
-      },
-      {
-        path: "blog",
-        element: <Blog />
       },
       {
         path: "projects",

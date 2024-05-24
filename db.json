@@ -1,0 +1,26 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "projectTitle": "Note Taker",
+      "shortDesc": "The quick brown fox jumped over the lazy moon",
+      "asA": "busy executive",
+      "iWant": "to have an app that transcribes meetings in real time",
+      "soThat": "I can focus on the tasks and next steps",
+      "userStory": "As a busy executive, I want to have an app that transcribes meetings in real time so that I can focus on the tasks and next steps.",
+      "name": "Erlich Bachmann",
+      "email": "erlich.bachmann@aviato.com"
+    },
+    {
+      "id": 2,
+      "projectTitle": "Game of Chores",
+      "shortDesc": "Peter Piper picked a peck of pickled pepper",
+      "asA": "single working parent",
+      "iWant": "to have a way to get my kids to do chores and win prizes",
+      "soThat": "I can have a nice glass of wine when I get home at night",
+      "userStory": "As a single working parent, I want to have a way to get my kids to do chores and win prizes so that I can go have a nice glass of wine when I get home at night.",
+      "name": "Bridget Jones",
+      "email": "bridget.jones@diary.com"
+    }
+  ]
+}

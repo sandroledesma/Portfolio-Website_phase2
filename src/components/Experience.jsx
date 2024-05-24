@@ -2,7 +2,7 @@ import React from "react";
 import profileImage from '../files/profileimage.jpg';
 import resumePdf from '../files/Alessandro M Ledesma - CV 8.24.pdf'
 
-function Experience() {
+export default function Experience() {
     return(
         <div className="flex items-center justify-center">
             <div className="flex items-center">
@@ -21,5 +21,3 @@ function Experience() {
         </div>
     );
 }
-
-export default Experience;
