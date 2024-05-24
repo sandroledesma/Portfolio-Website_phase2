@@ -2,22 +2,26 @@ import React from "react";
 import profileImage from '../files/profileimage.jpg';
 import resumePdf from '../files/Alessandro M Ledesma - CV 8.24.pdf'
 
-export default function Experience() {
+function Experience() {
     return(
-        <div className="flex items-center justify-center">
-            <div className="flex items-center">
+        <div className="container mx-auto pt-96">
+            <div className="flex justify-center">
                 <div className="w-48 h-48 rounded-full overflow-hidden mr-4">
                     <img src={profileImage} alt="Sandro Ledesma" className="w-full h-full object-cover object-top"/>
                 </div>
             </div>
-            <div className="ml=4">
-                <h3 className="text-2xl font-bold mb-1">Sandro Ledesma</h3>
-                <a href="https://www.linkedin.com/in/sandroledesma" className="text-blue-500">www.linkedin.com/in/sandroledesma</a> 
+            <div className="flex flex-col justify-center">
+                <h3 className="text-2xl font-bold mb-1 text-center">Sandro Ledesma</h3>
                 <br />
-                <a href="https://www.github.com/sandroledesma" className="text-blue-500">www.github.com/sandroledesma</a>
+                <a href="https://www.linkedin.com/in/sandroledesma" className="text-blue-500 text-center">www.linkedin.com/in/sandroledesma</a> 
+                <a href="https://www.github.com/sandroledesma" className="text-blue-500 text-center">www.github.com/sandroledesma</a>
                 <br />
-                <a href={resumePdf} className="text-blue-500">Download Resume</a>
+            </div>
+            <div className="mt-8 p-1 bg-gray-400 rounded-lg">
+                <iframe className="w-auto h-auto border-none" style={{ minHeight: "700px", width: "calc(100vw - 18rem)" }} title="resume" src={resumePdf} />
             </div>
         </div>
     );
 }
+
+export default Experience;

@@ -1,7 +1,7 @@
 {
   "projects": [
     {
-      "id": 1,
+      "id": "1",
       "projectTitle": "Note Taker",
       "shortDesc": "The quick brown fox jumped over the lazy moon",
       "asA": "busy executive",
@@ -12,7 +12,7 @@
       "email": "erlich.bachmann@aviato.com"
     },
     {
-      "id": 2,
+      "id": "2",
       "projectTitle": "Game of Chores",
       "shortDesc": "Peter Piper picked a peck of pickled pepper",
       "asA": "single working parent",
