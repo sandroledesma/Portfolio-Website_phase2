@@ -158,22 +158,6 @@ function Projects() {
                     </tr>
                 </thead>
                 <tbody>
-                    {/* <tr className="bg-gray-300 even:bg-gray-200">
-                        <td className="border border-slate-600 text-gray-700 px-4 py-2 text-sm text-center">
-                            Note Taker</td>
-                        <td className="border border-slate-600 text-gray-700 px-4 py-2 text-sm">
-                            As a busy executive, I want to have an app that transcribes meetings in real time so that I can focus on the tasks and next steps. </td>
-                        <td className="border border-slate-600 text-gray-700 px-4 py-2 text-sm text-center">
-                            Pending</td>
-                    </tr>
-                    <tr className="bg-gray-300 even:bg-gray-200">
-                        <td className="border border-slate-600 text-gray-700 px-4 py-2 text-sm text-center">
-                            Game of Chores</td>
-                        <td className="border border-slate-600 text-gray-700 px-4 py-2 text-sm">
-                            As a single working parent, I want to have a way to get my kids to do chores and win prizes so that I can have a nice glass of wine when I get home at night. </td>
-                        <td className="border border-slate-600 text-gray-700 px-4 py-2 text-sm text-center">
-                            Pending</td>
-                    </tr> */}
                     {dbProjects.map((project, index) => (
                         <tr key={index} className={index % 2 === 0 ? "bg-gray-300" : "bg-gray-200"}>
                             <td className="border border-slate-600 text-gray-700 px-4 py-2 text-sm text-center">

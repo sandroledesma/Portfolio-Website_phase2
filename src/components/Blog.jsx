@@ -8,7 +8,7 @@ function Blog() {
             try {
                 const response = await fetch('https://api.medium.com/v1/users/sandroledesma/publications', {
                     headers: {
-                        Authorization: 'Bearer 2cff51f2013d6ed4650ae8821b42b7e6d2fce613e15d2310848801041944c0aef'
+
                     }
                 });
                 if (response.ok) {
