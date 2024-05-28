@@ -18,7 +18,7 @@ function Experience() {
                 <br />
             </div>
             <div className="mt-8 p-1 bg-gray-400 rounded-lg">
-                <iframe className="w-auto h-auto border-none" style={{ minHeight: "700px", width: "calc(100vw - 18rem)" }} title="resume" src={resumePdf} />
+                <iframe className="w-auto h-auto border-none" style={{ height: "calc(125vw - 18rem", width: "calc(100vw - 18rem)" }} title="resume" src={resumePdf} />
             </div>
         </div>
     );

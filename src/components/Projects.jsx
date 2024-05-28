@@ -5,16 +5,27 @@ function Projects() {
 
     const [ projects, setProjects ] = useState([]);
     const [ dbProjects, setDbProjects ] = useState([]);
+    const [ requestProject, setRequestProject ] = useState ({
+        projectTitle: "", 
+        shortDesc: "", 
+        asA: "", 
+        iWant: "", 
+        soThat: "", 
+        userStory: "", 
+        name: "", 
+        email: ""
+    });
+
+    const fetchProjectsFromDatabase = () => {
+        fetch("http://localhost:3000/projects")
+            .then(response => response.json())
+            .then(data => setDbProjects(data));
+        };
 
     useEffect(() => {
-      fetch("http://localhost:3000/projects")
-      .then(response => response.json())
-      .then(data => setDbProjects(data));
+        fetchProjectsFromDatabase();
     }, []);
 
-    const [ requestProject, setRequestProject ] = useState ({
-        projectTitle: "", shortDesc: "", asA: "", iWant: "", soThat: "", userStory: "", name: "", email: ""
-    });
 
     const onChangeRequestProject = event => {
         const { name, value } = event.target;
@@ -23,20 +34,18 @@ function Projects() {
             [name]: value,
         }));
     
-        if (name === "asA" || name === "iWant" || name === "soThat") {
-            const { asA, iWant, soThat } = requestProject;
-            if (asA && iWant && soThat) {
-                setRequestProject(prevState => ({
-                    ...prevState,
-                    userStory: `As a ${asA}, I want ${iWant} so that ${soThat}.`
-                }));
+        const { asA, iWant, soThat } = requestProject;
+        if (asA && iWant && soThat) {
+            setRequestProject(prevState => ({
+                ...prevState,
+                userStory: `As a ${asA}, I want ${iWant} so that ${soThat}.`
+            }));
             }
         }
-    }
 
     const submitRequestProject = (event) => {
         event.preventDefault();
-//      console.log("Submitting Request:", requestProject);
+        console.log("Submitting Request:", requestProject);
         fetch("http://localhost:3000/projects", {
             method: "POST",
             headers: {
@@ -47,11 +56,21 @@ function Projects() {
         })
         .then(response => response.json())
         .then(newRequestInDb => {
-//          console.log("Response from server:", newRequestInDb);
+            console.log("Response from server:", newRequestInDb);
             setProjects([...projects, newRequestInDb]);
-            setRequestProject({projectTitle: "", shortDesc: "", asA: "", iWant: "", soThat: "", userStory: "", name: "", email: ""})
+            setRequestProject({
+                projectTitle: "", 
+                shortDesc: "", 
+                asA: "", 
+                iWant: "", 
+                soThat: "", 
+                userStory: "", 
+                name: "", 
+                email: ""
+            });
+            fetchProjectsFromDatabase();
         })
-    }
+    };
 
     return (
         <div className="p-8 pt-96">
