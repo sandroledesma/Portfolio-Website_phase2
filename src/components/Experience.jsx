@@ -4,7 +4,7 @@ import resumePdf from '../files/Alessandro M Ledesma - CV 8.24.pdf'
 
 function Experience() {
     return(
-        <div className="container mx-auto pt-96">
+        <div className="container mx-auto pt-18 p-8">
             <div className="flex justify-center">
                 <div className="w-48 h-48 rounded-full overflow-hidden mr-4">
                     <img src={profileImage} alt="Sandro Ledesma" className="w-full h-full object-cover object-top"/>

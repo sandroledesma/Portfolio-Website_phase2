@@ -16,6 +16,7 @@ import Blog from './components/Blog.jsx';
 import Error from './components/Error.jsx';
 import Experience from './components/Experience.jsx';
 import NavBar from './components/NavBar.jsx';
+import Portfolio from './components/Portfolio.jsx';
 import Projects from './components/Projects.jsx';
 
 const router = createBrowserRouter([
@@ -39,6 +40,10 @@ const router = createBrowserRouter([
       {
         path: "projects",
         element: <Projects />
+      },
+      {
+        path: "portfolio",
+        element: <Portfolio />
       }
     ]
   }

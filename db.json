@@ -22,5 +22,34 @@
       "name": "Bridget Jones",
       "email": "bridget.jones@diary.com"
     }
+  ],
+  "completedProjects": [
+    {
+      "id": "1",
+      "projectTitle": "Bartender Helper",
+      "shortDesc": "App that helps bartenders and patrons to choose the best drink for them!",
+      "userStory": "As a Bartender, I want to keep my patrons happy so that I don't have to keep remaking drinks.",
+      "website": "BartenderHelper.com",
+      "whiteboard": "./src/files/whiteboard/bartenderhelper.jpeg",
+      "gitHubRepo": "https://github.com/sandroledesma/phase-1-project"
+    },
+    {
+      "id": "2",
+      "projectTitle": "Optimice",
+      "shortDesc": "App that helps Product Managers streamline the build and deploy process!",
+      "userStory": "As a Product Manager, I want to be able to create User Stories, so that developers can understand the requirements needed for the project.",
+      "website": "BartenderHelper.com",
+      "whiteboard": "./src/files/whiteboard/optimice.jpeg",
+      "gitHubRepo": "https://github.com/sandroledesma/phase-2-project"
+    },
+    {
+      "id": "3",
+      "projectTitle": "Portfolio",
+      "shortDesc": "App that allows new developers or career pivoters to showcase what they learned",
+      "userStory": "As a student in Software Engineering, I want to have a website that showcases my portfolio and experience so that I can get a job.",
+      "website": "www.google.com",
+      "whiteboard": "./src/files/whiteboard/portfolio.jpeg",
+      "gitHubRepo": "https://github.com/sandroledesma/phase-2-project"
+    }
   ]
 }

@@ -73,14 +73,7 @@ function Projects() {
     };
 
     return (
-        <div className="p-8 pt-96">
-            <div className="pt-32">
-                <h2 className="text-2xl font-bold mb-1">Completed Projects:</h2> <br />
-                <p className="text-center">Completed Projects will be fetched here</p>
-            </div>
-            <br />
-            <div>{/* db of completed projects */}</div>
-            <br />
+        <div className="p-8 px-12 pt-18 dark:bg-blue-900">
             <div className="max-w-lg mx-auto bg-gray-300 p-6 rounded-lg shadow-lg">
                 <h2 className="text-2xl text-black font-bold mb-6">Request a Project:</h2>
             <form className="space-y-4" onSubmit={submitRequestProject}>
