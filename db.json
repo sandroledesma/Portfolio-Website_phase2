@@ -21,6 +21,17 @@
       "userStory": "As a single working parent, I want to have a way to get my kids to do chores and win prizes so that I can go have a nice glass of wine when I get home at night.",
       "name": "Bridget Jones",
       "email": "bridget.jones@diary.com"
+    },
+    {
+      "id": "7dbd",
+      "projectTitle": "Make me a Portfolio",
+      "shortDesc": "make me a portfolio",
+      "asA": "Software Engineer",
+      "iWant": "a portfolio",
+      "soThat": "i make money",
+      "userStory": "As a Software Engineer, I want a portfolio so that i make money.",
+      "name": "Sakib",
+      "email": "Sakib@Rasul.com"
     }
   ],
   "completedProjects": [

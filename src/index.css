@@ -38,7 +38,7 @@ body {
   padding-top: 100px; /* Matches the navbar height */
   display: flex;
   flex-direction: column; /* Ensures content stacks vertically */
-  align-items: center;
+  align-items: flex-start;
   min-width: 320px;
   min-height: 100vh;
 }
@@ -73,12 +73,13 @@ button:focus-visible {
   display: none;
 }
 
-.hover-image:hover img {
-  display: inline;
+.hover-image:hover img:last-child {
+  display: block;
   position: absolute;
   top: -10px; /* Adjust as needed */
   left: 100%; /* Adjust as needed */
-  max-width: 200px;
+  max-width: 800px;
+  z-index: 10;
   border: 1px solid #ccc;
   background: #fff;
 }

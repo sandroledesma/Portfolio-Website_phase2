@@ -26,7 +26,7 @@ function App() {
       <main>
         <Outlet />
       </main>
-      <div className="bg-yellow-100 dark:bg-blue-900">
+      {/* <div className="bg-yellow-100 dark:bg-blue-900">
         <button onClick={() => darkModeHandler()}>
           {
             dark && <IoSunny />
@@ -34,8 +34,8 @@ function App() {
           {
             !dark && <IoMoon/>
           }
-        </button>
-      </div>
+        </button> 
+      </div> */}
     </div>
   );
 }
