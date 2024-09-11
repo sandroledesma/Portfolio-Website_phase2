@@ -21,7 +21,7 @@ function App() {
   }
 
   return (
-    <div className="dark:bg-blue-900">
+    <div className="bg-black">
       <header><NavBar /></header>
       <main>
         <Outlet />

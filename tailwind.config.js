@@ -15,7 +15,16 @@ module.exports = {
   ],
   darkMode: "class",
   theme: {
-    extend: {},
+    container: {
+      center: true,
+    },
+    colors: {
+      'black': '#000000',
+      'white': '#FFFFFF'
+    },
+    fontFamily: {
+      sans: ['Helvetica', 'sans-serif']
+    }
   },
   plugins: [],
 }
