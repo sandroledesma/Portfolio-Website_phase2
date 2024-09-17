@@ -18,10 +18,10 @@ function NavBar() {
                 <button className="bg-black-500 hover:bg-black-600 active:bg-black-700 focus:outline-none 
                     focus:ring focus:ring-black-300"><Link to="/blog">Blog</Link></button>
             </li>
-            <li className="inline-block">
+            {/* <li className="inline-block">
                 <button className="bg-black-500 hover:bg-black-600 active:bg-black-700 focus:outline-none 
                     focus:ring focus:ring-black-300"><Link to="/projects">Project Request</Link></button>
-            </li>
+            </li> */}
             <li className="inline-block">
                 <button className="bg-black-500 hover:bg-black-600 active:bg-black-700 focus:outline-none 
                     focus:ring focus:ring-black-300"><Link to="/portfolio">Portfolio</Link></button>
